@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y build-essential \
     ntp  \
     libclang-dev \
     libcgicc-dev \
+    libgsl0-dev \
     libz-dev \
     autoconf \
     automake \
