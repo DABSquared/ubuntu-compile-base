@@ -14,6 +14,7 @@ RUN apt-get update && apt-get install -y build-essential \
     git \
     g++ \
     apache2 \
+    ntp  \
     libclang-dev \
     libcgicc-dev \
     libz-dev \
