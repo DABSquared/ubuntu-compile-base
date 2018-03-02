@@ -28,5 +28,7 @@ RUN apt-get update && apt-get install -y build-essential \
 
 RUN mkdir -p /usr/local/share/man/man1 && git clone https://github.com/pjmaker/nana.git && cd nana && autoreconf --install && ./configure && make && make install && cd .. && rm -rf nana
 
+RUN ln -s /usr/bin/sensors /usr/local/sbin/sensors
+
 COPY ntp.conf /etc/ntp.conf
 RUN chmod 644 /etc/ntp.conf
