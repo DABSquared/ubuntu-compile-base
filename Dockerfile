@@ -24,7 +24,8 @@ RUN apt-get update && apt-get install -y build-essential \
     default-jdk \
     libboost-all-dev \
     ctags \
-    texinfo
+    texinfo \
+    sudo
 
 RUN mkdir -p /usr/local/share/man/man1 && git clone https://github.com/pjmaker/nana.git && cd nana && autoreconf --install && ./configure && make && make install && cd .. && rm -rf nana
 
